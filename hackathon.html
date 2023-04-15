@@ -20,6 +20,20 @@
   gtag('config', 'UA-124637206-1');
 </script>
 
+<style>
+	.slider_slides {display:none;}
+	.slider_section{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.slider_content{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 560px;
+}
+</style>
+
 </HEAD>
 <!-- Page content -->
 <div class="bigPicture tallHeading"><img src="./Images/achievement-cropped.jpg"></div>
@@ -63,8 +77,41 @@
 
 <!-- <center><p>This money is used to help our non-profit organization. If the registration fee is a barrier to your participation, please feel free to contact us!</p></center> -->
 
+<!--img slider start added by Matthew Knigin 2023-04-15-->
+<div class="slider_content slider_section">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0000.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0001.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0002.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0003.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0004.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0005.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0006.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0007.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0008.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0009.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0010.jpg" style="width:100%">
+	<img class="slider_slides" src="./Images/IMG-20230331-WA0011.jpg" style="width:100%">
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+	
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("slider_slides");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+<!--End image slider-->
 
 <h2>Description</h2>
+
 <div class="divTable"><div class="divTableBody">
 	<div class="divTableRow">
     	<div class="divTableCell">
